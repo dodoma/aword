@@ -123,7 +123,7 @@ int main(int argc, char *argv[])
             answer[strcspn(answer, "\n")] = 0;
             mstr_tolower(answer);
 
-            if (!strcmp(answer, dst) || strstr(dst, answer) || strstr(answer, dst)) {
+            if (strlen(answer) > 0 && (!strcmp(answer, dst) || strstr(dst, answer) || strstr(answer, dst))) {
                 if (strcmp(answer, dst)) {
                     printf(MCOLOR_YELLOW"%s\n", dst);
                 }

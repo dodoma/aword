@@ -1,4 +1,6 @@
 *.o
 .depend
+.passed
 cscope.*
+gmon.out
 aword
